@@ -1,0 +1,82 @@
+metadata:
+  language: "fr"
+  version: "1.0"
+  curator: "Kevin Sigmoid"
+  note: "Le bruit corporatif francophone : quand le vide se dit avec panache."
+
+categories:
+  synergies:
+    weight: 10
+    words:
+      - "synergie"
+      - "synergies"
+      - "effet de synergie"
+    sarcasm_level: "MAXIMUM"
+
+  temporel_vague:
+    weight: 5
+    words:
+      - "donc voilà"
+      - "au niveau de"
+      - "par rapport à ça"
+      - "dans cette dynamique"
+      - "aller de l'avant"
+      - "en termes de"
+      - "à ce stade"
+      - "sur ce sujet"
+    sarcasm_level: "ÉLEVÉ"
+
+  faux_consensus:
+    weight: 8
+    words:
+      - "tout le monde est aligné"
+      - "on est tous d'accord"
+      - "c'est clair pour tout le monde"
+      - "vous voyez ce que je veux dire"
+    sarcasm_level: "CRITIQUE"
+    note: "Utilisé précisément quand personne n'est d'accord."
+
+  obvious_repackaged:
+    weight: 3
+    words:
+      - "clairement"
+      - "concrètement"
+      - "évidemment"
+      - "naturellement"
+      - "forcément"
+    sarcasm_level: "MODÉRÉ"
+    note: "Si c'était si clair/concret/évident, pourquoi en parler ?"
+
+  anglicismes_corporate:
+    weight: 7
+    words:
+      - "process"
+      - "deadline"
+      - "feedback"
+      - "workflow"
+      - "brainstorming"
+      - "ASAP"
+      - "le call"
+      - "le meeting"
+    sarcasm_level: "ÉLEVÉ"
+    note: "L'Académie française en sueur."
+
+  promesses_vides:
+    weight: 6
+    words:
+      - "on va faire le point"
+      - "je reviens vers toi"
+      - "c'est noté"
+      - "on en reparle"
+    sarcasm_level: "ÉLEVÉ"
+    note: "Spoiler : personne ne reviendra vers personne."
+
+  filler_management:
+    weight: 4
+    words:
+      - "c'est une bonne question"
+      - "tout à fait"
+      - "absolument"
+      - "effectivement"
+    sarcasm_level: "MODÉRÉ"
+    note: "Mots prononcés en attendant que le cerveau trouve une vraie réponse."
