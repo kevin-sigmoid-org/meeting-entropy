@@ -1,0 +1,77 @@
+metadata:
+  language: "en"
+  version: "1.0"
+  curator: "Kevin Sigmoid"
+  note: "The motherlode. English-language corporate nonsense in its natural habitat."
+
+categories:
+  synergies:
+    weight: 10
+    words:
+      - "synergy"
+      - "synergies"
+      - "synergistic"
+    sarcasm_level: "MAXIMUM"
+    note: "The original sin of corporate vocabulary."
+
+  action_avoidance:
+    weight: 7
+    words:
+      - "circle back"
+      - "touch base"
+      - "take offline"
+      - "park that"
+      - "revisit later"
+    sarcasm_level: "HIGH"
+    note: "Phrases that mean 'we will never speak of this again.'"
+
+  corporate_poetry:
+    weight: 8
+    words:
+      - "move the needle"
+      - "boil the ocean"
+      - "low-hanging fruit"
+      - "deep dive"
+      - "drill down"
+      - "peel the onion"
+    sarcasm_level: "CRITICAL"
+    note: "Metaphors so mixed they need a blender."
+
+  temporal_vague:
+    weight: 5
+    words:
+      - "going forward"
+      - "at the end of the day"
+      - "in due course"
+      - "at this point in time"
+    sarcasm_level: "MODERATE"
+
+  faux_agreement:
+    weight: 8
+    words:
+      - "does that make sense"
+      - "are we aligned"
+      - "everyone on the same page"
+    sarcasm_level: "CRITICAL"
+    note: "Rhetorical questions that dare you to disagree."
+
+  meaningless_modifiers:
+    weight: 3
+    words:
+      - "basically"
+      - "essentially"
+      - "literally"
+      - "actually"
+      - "honestly"
+    sarcasm_level: "LOW"
+    note: "Words that add nothing but confidence to the speaker."
+
+  meeting_meta:
+    weight: 6
+    words:
+      - "sorry I was on mute"
+      - "can everyone see my screen"
+      - "can you hear me"
+      - "let me share my screen"
+    sarcasm_level: "MODERATE"
+    note: "The liturgy of the modern remote meeting."
