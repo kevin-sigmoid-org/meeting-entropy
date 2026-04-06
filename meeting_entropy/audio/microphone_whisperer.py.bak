@@ -5,21 +5,10 @@ from pathlib import Path
 import numpy as np
 from vosk import Model, KaldiRecognizer, SetLogLevel
 from meeting_entropy.audio.the_uncomfortable_listener import AudioChunk
-import psutil
 
 # Shut Vosk up
 SetLogLevel(-1)
-def _detect_optimal_tier() -> str:
-    """Detects machine specs and returns the recommended model tier."""
-    cpu_count = psutil.cpu_count(logical=False) or 1
-    ram_gb = psutil.virtual_memory().total / (1024 ** 3)
 
-    if cpu_count >= 8 and ram_gb >= 16:
-        return "large"
-    elif cpu_count >= 4 and ram_gb >= 8:
-        return "small"
-    else:
-        return "tiny"
 
 # Map Whisper-style model names to Vosk model directories
 _MODEL_MAP = {
@@ -49,7 +38,18 @@ _MODEL_MAP = {
 class MicrophoneWhisperer:
     """Transcribes audio chunks using Vosk. Fast, offline, zero hallucinations."""
 
+    def _detect_optimal_tier() -> str:
+        """Detects machine specs and returns the recommended model tier."""
+        cpu_count = psutil.cpu_count(logical=False) or 1
+        ram_gb = psutil.virtual_memory().total / (1024 ** 3)
 
+        if cpu_count >= 8 and ram_gb >= 16:
+            return "large"
+        elif cpu_count >= 4 and ram_gb >= 8:
+            return "small"
+        else:
+            return "tiny"
+            
     def __init__(
         self,
         model_name: str = "small",

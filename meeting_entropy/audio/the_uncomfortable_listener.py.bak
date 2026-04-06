@@ -42,7 +42,6 @@ class TheUncomfortableListener:
             channels=self.channels,
             rate=self.sample_rate,
             input=True,
-            input_device_index=1,
             frames_per_buffer=self.chunk_size,
         )
 
