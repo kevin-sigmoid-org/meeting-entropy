@@ -1,0 +1,58 @@
+metadata:
+  language: "de"
+  version: "1.0"
+  curator: "Kevin Sigmoid"
+  note: "Deutsches Unternehmensgerede: wo zusammengesetzte Wörter das Geschwätz noch effizienter machen."
+
+categories:
+  synergien:
+    weight: 10
+    words:
+      - "Synergieeffekte"
+      - "Synergien"
+      - "synergetisch"
+    sarcasm_level: "MAXIMUM"
+    note: "Synergieeffekte klingt so viel beeindruckender als 'synergy'."
+
+  corporate_deutsch:
+    weight: 7
+    words:
+      - "Mehrwert"
+      - "ganzheitlich"
+      - "nachhaltig"
+      - "Kernkompetenz"
+      - "zukunftsorientiert"
+      - "ergebnisorientiert"
+    sarcasm_level: "HOCH"
+    note: "Compound words forged in the fires of middle management."
+
+  anglizismen:
+    weight: 6
+    words:
+      - "Meeting"
+      - "Call"
+      - "Deadline"
+      - "Feedback"
+      - "Workflow"
+      - "Performance"
+    sarcasm_level: "MITTEL"
+    note: "Denglisch at its finest."
+
+  vague_zeitlich:
+    weight: 5
+    words:
+      - "zeitnah"
+      - "perspektivisch"
+      - "mittelfristig"
+      - "auf absehbare Zeit"
+    sarcasm_level: "MITTEL"
+    note: "'Zeitnah' kann alles zwischen 5 Minuten und 5 Jahren bedeuten."
+
+  pseudo_agreement:
+    weight: 8
+    words:
+      - "da sind wir uns einig"
+      - "das sehen wir alle so"
+      - "wie besprochen"
+    sarcasm_level: "KRITISCH"
+    note: "'Wie besprochen' — oft wurde gar nichts besprochen."

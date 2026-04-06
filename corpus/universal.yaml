@@ -1,0 +1,71 @@
+metadata:
+  language: "universal"
+  version: "1.0"
+  curator: "Kevin Sigmoid"
+  note: "Language-agnostic corporate noise — the Esperanto of saying nothing."
+
+categories:
+  acronym_soup:
+    weight: 6
+    words:
+      - "KPI"
+      - "ROI"
+      - "OKR"
+      - "SLA"
+      - "MVP"
+      - "POC"
+      - "EOD"
+      - "COB"
+      - "ASAP"
+      - "FYI"
+    sarcasm_level: "MODERATE"
+    note: "If your sentence is more than 50% acronyms, you may be the problem."
+
+  tech_bro:
+    weight: 7
+    words:
+      - "disrupt"
+      - "pivot"
+      - "scale"
+      - "leverage"
+      - "ecosystem"
+      - "paradigm"
+      - "blockchain"
+      - "AI-powered"
+      - "game-changer"
+    sarcasm_level: "HIGH"
+    note: "Vocabulary that adds 20% to your Series A valuation."
+
+  empty_promises:
+    weight: 5
+    words:
+      - "action items"
+      - "next steps"
+      - "follow up"
+      - "deliverables"
+      - "takeaways"
+    sarcasm_level: "MODERATE"
+    note: "Things that are documented but never executed."
+
+  meeting_about_meetings:
+    weight: 9
+    words:
+      - "pre-meeting"
+      - "post-meeting"
+      - "sync"
+      - "standup"
+      - "retrospective about the retrospective"
+    sarcasm_level: "CRITICAL"
+    note: "The ouroboros of corporate calendars."
+
+  silence_fillers:
+    weight: 2
+    words:
+      - "um"
+      - "uh"
+      - "so"
+      - "well"
+      - "right"
+      - "okay so"
+    sarcasm_level: "LOW"
+    note: "The sound of thinking — or the absence thereof."
