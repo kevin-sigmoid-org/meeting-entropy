@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 authors = [
     { name = "Julien Mer — kevin-sigmoid-org" },
 ]
-keywords = ["meeting", "entropy", "buzzword", "detection", "whisper", "cli"]
+keywords = ["meeting", "entropy", "buzzword", "detection", "vosk", "cli"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
@@ -26,7 +26,8 @@ classifiers = [
     "Topic :: Office/Business",
 ]
 dependencies = [
-    "faster-whisper>=1.0.0",
+    "vosk>=0.3.45",
+    "psutil>=5.9",
     "pyaudio>=0.2.14",
     "rich>=13.0.0",
     "pyyaml>=6.0",
