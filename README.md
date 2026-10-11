@@ -68,7 +68,7 @@ A real-time audio analyzer that listens to your meeting and tells you — object
 
 ```mermaid
 flowchart LR
-    A[🎙️ Your microphone] --> B[Whisper STT]
+    A[🎙️ Your microphone] --> B[Vosk STT, offline]
     B --> C{Word detected}
     C -->|Normal word| D[+0 BS points]
     C -->|Buzzword detected| E[+5 BS points 💀]
@@ -172,10 +172,12 @@ graph TD
 ## Installation
 
 ```bash
-pip install meeting-entropy
+pip install git+https://github.com/kevin-sigmoid-org/meeting-entropy
 ```
 
-That's it. Kevin kept it simple.
+Then give it ears. Download a Vosk model from https://alphacephei.com/vosk/models (`vosk-model-small-en-us-0.15` for English, `vosk-model-small-fr-0.22` for French) and unzip it into `~/.meeting-entropy/models/`.
+
+Kevin kept it simple. Vosk didn't.
 
 ---
 
@@ -283,7 +285,7 @@ MIT. Free forever.
 ---
 
 *A kevin-sigmoid-org project.*
-*Built with Python, Whisper, strong opinions, and the memory of every meeting that could have been an email.*
+*Built with Python, Vosk, strong opinions, and the memory of every meeting that could have been an email.*
 
 ```
 "The entropy of a perfect meeting is zero.
